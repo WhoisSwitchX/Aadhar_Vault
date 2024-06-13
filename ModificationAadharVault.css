@@ -1,203 +1,202 @@
-/* @import url("
-https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap
-"); */
+/* Importing Google Fonts */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+
+/* Universal Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .bx-1,
-  .bx-2 {
-    max-width: 1440px;
-    margin: 2rem auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.3);
-  }
-  
-  .bx-1 .head {
-    border-radius: 10px 10px 0 0;
-    padding: 8px 12px;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    background: rgb(1, 1, 81);
-  }
-  
-  .bx-1 .form-bx {
-    padding: 8px 12px;
-    border-radius: 0 0 10px 10px;
-  }
-  
-  .form-bx .field {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .field {
-    margin-bottom: 20px;
-  }
-  
-  .field .form-head {
-    width: 25%;
-  }
-  
-  .form-head p {
-    font-size: 20px;
-    justify-content: left;
-  }
-  
-  .form-head span {
-    color: red;
-  }
-  
-  .field .form-input {
-    width: 75%;
-  }
-  
-  .form-input {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .form-input input {
-    font-size: 16px;
-    width: 100%;
-    padding: 8px 10px;
-    border-radius: 8px;
-    outline: none;
-    border: 1px solid #a1a0a0;
-  }
-  
-  .form-input .rd-bx {
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .form-input .rd-bx .rd-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .form-input .rd-bx .rd-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* gap: 16px; */
-    width: 100%;
-  }
-  
-  .form-input .rd-bx .rd-2 input {
-    width: 15%;
-  }
-  
-  .form-input .rd-bx .rd-2 span {
-    width: 85%;
-  }
-  
-  .form-input .emp-bx {
-    width: 70%;
-  }
-  
-  .form-input .emp-bx input {
-    width: 100%;
-  }
-  
-  .form-grp-bx {
-    padding: 8px 12px 10px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  .form-bx-1,
-  .form-bx-2 {
-    width: 50%;
-  }
-  
-  .bx-2 .head {
-    border-radius: 10px 10px 0 0;
-    padding: 8px 12px;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    background: rgb(1, 1, 81);
-  }
-  
-  .bx-5 .head {
-    border-radius: 10px 10px 0 0;
-    padding: 8px 12px;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    background: rgb(1, 1, 81);
-  }
-  
-  .bx-9 .head {
-    border-radius: 10px 10px 0 0;
-    padding: 8px 12px;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    background: rgb(1, 1, 81);
-  }
-  
-  .form-field {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 16px 0;
-  }
-  
-  .form-head {
-    width: 30%;
-  }
-  
-  .form-input {
-    width: 70%;
-  }
-  
-  .form-input select {
-    width: 100%;
-    padding: 8px 10px;
-    font-size: 16px;
-    color: gray;
-    border-radius: 8px;
-  }
-  
-  .form-head span {
-    color: red;
-  }
-  
-  .form-head-check {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .btn-grp-bx {
-    width: 100%;
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-  }
-  
-  .btn-grp-bx .btn button {
-    background: rgb(17, 17, 90);
-    padding: 10px 20px;
-    color: white;
-    border-radius: 6px;
-    border: none;
-    font-weight: 500px;
-    font-size: 20px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Styles for bx-1 and bx-2 containers */
+.bx-1,
+.bx-2 {
+  max-width: 1440px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Header styles within bx-1 */
+.bx-1 .head {
+  border-radius: 10px 10px 0 0;
+  padding: 8px 12px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  background: rgb(1, 1, 81);
+}
+
+/* Form box styles within bx-1 */
+.bx-1 .form-bx {
+  padding: 8px 12px;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Styles for form fields */
+.form-bx .field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Spacing between fields */
+}
+
+/* Styles for form head labels */
+.field .form-head {
+  width: 25%; /* Width of form head column */
+}
+
+.form-head p {
+  font-size: 20px;
+  justify-content: left;
+}
+
+.form-head span {
+  color: red; /* Red color for required indicator */
+}
+
+/* Styles for form inputs */
+.field .form-input {
+  width: 75%;
+}
+
+.form-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-input input {
+  font-size: 16px;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #a1a0a0;
+}
+
+/* Styles for radio button boxes */
+.form-input .rd-bx {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px; /* Spacing between radio buttons */
+}
+
+.form-input .rd-bx .rd-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-input .rd-bx .rd-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Full width for radio button group */
+}
+
+.form-input .rd-bx .rd-2 input {
+  width: 15%; /* Width of individual radio button */
+}
+
+.form-input .rd-bx .rd-2 span {
+  width: 85%; /* Width of label text for radio buttons */
+}
+
+/* Styles for employee box */
+.form-input .emp-bx {
+  width: 70%; /* Width of employee input box */
+}
+
+.form-input .emp-bx input {
+  width: 100%; /* Full width for employee input */
+}
+
+/* Styles for form group box */
+.form-grp-bx {
+  padding: 8px 12px 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Spacing between form groups */
+}
+
+/* Styles for form boxes 1 and 2 */
+.form-bx-1,
+.form-bx-2 {
+  width: 50%; /* Half width for form boxes */
+}
+
+/* Additional styles for bx-2, bx-5, and bx-9 headers */
+.bx-2 .head,
+.bx-5 .head,
+.bx-9 .head {
+  border-radius: 10px 10px 0 0;
+  padding: 8px 12px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  background: rgb(1, 1, 81);
+}
+
+/* Styles for form fields across all modules */
+.form-field {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0; /* Vertical margin between form fields */
+}
+
+/* Styles for form head across all modules */
+.form-head {
+  width: 30%; /* Width of form head column */
+}
+
+/* Styles for form input across all modules */
+.form-input {
+  width: 70%; /* Width of form input column */
+}
+
+/* Styles for select inputs */
+.form-input select {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 16px;
+  color: gray;
+  border-radius: 8px;
+}
+
+/* Red color for required indicator */
+.form-head span {
+  color: red;
+}
+
+/* Styles for checkbox and label alignment */
+.form-head-check {
+  display: flex;
+  gap: 10px;
+}
+
+/* Styles for button group box */
+.btn-grp-bx {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* Spacing between buttons */
+}
+
+/* Styles for buttons within button group box */
+.btn-grp-bx .btn button {
+  background: rgb(17, 17, 90);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500px;
+  font-size: 20px;
+}

@@ -1,294 +1,242 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="AadharVault.css"/> <!-- Link to external CSS file -->
+  <title>Aadhar Vault</title>
+</head>
+<body>
+  <!-- Module bx-1: Default Data -->
+  <div class="bx-1">
+    <div class="head">
+      <p>Default Data</p> <!-- Header for bx-1 -->
+    </div>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="AadharVault.css"/>
-
-    <title>Aadhar Vault</title>
-  </head>
-
-  <body>
-    <div class="bx-1">
-      <div class="head">
-        <p>Default Data</p>
-      </div>
-
-      <div class="form-bx">
-        <!-- First Field -->
-
-        <div class="field">
-          <div class="form-head">
-            <p>Types of User Request: <span>*</span></p>
-          </div>
-          <div class="form-input">
-            <select>
-              <option value="modification">Modification</option>
-              <!-- <option value="Select">Select</option> -->
-
-              <option value="creation">Creation</option>
-
-              
-
-              <option value="deletion">Deletion</option>
-            </select>
-          </div>
+    <div class="form-bx">
+      <!-- First Field -->
+      <div class="field">
+        <div class="form-head">
+          <p>Types of User Request: <span>*</span></p> <!-- Label for select input -->
         </div>
-        <!-- ./First Field -->
-        <!-- Second Field -->
+        <div class="form-input">
+          <select>
+            <option value="modification">Modification</option>
+            <option value="creation">Creation</option>
+          </select>
+        </div>
+      </div>
+      <!-- ./First Field -->
 
-        <div class="field">
-          <div class="form-head">
-            <p>Request For: <span>*</span></p>
-          </div>
-
-          <div class="form-input">
-            <div class="rd-bx">
-              <div class="rd-1">
-                <input type="radio" id="myself" name="requestFor" checked />
-                <label for="myself">Myself</label>
+      <!-- Second Field -->
+      <div class="field">
+        <div class="form-head">
+          <p>Request For: <span>*</span></p> <!-- Label for radio buttons -->
+        </div>
+        <div class="form-input">
+          <div class="rd-bx">
+            <div class="rd-1">
+              <input type="radio" id="myself" name="requestFor" checked />
+              <label for="myself">Myself</label>
             </div>
-
             <div class="rd-2">
-                <input type="radio" id="onBehalf" name="requestFor" />
-                <label for="onBehalf">On behalf of</label>
+              <input type="radio" id="onBehalf" name="requestFor" />
+              <label for="onBehalf">On behalf of</label>
             </div>
-            </div>
-
-            <div class="emp-bx">
-              <input
-                type="text"
-                placeholder="Enter Employee Details..."
-                disabled
-              />
-            </div>
+          </div>
+          <div class="emp-bx">
+            <input type="text" placeholder="Enter Employee Details..." disabled />
           </div>
         </div>
+      </div>
+      <!-- ./Second Field -->
 
-        <!-- ./Second Field -->
-        <!-- Third Field -->
+      <!-- Third Field -->
+      <div class="field">
+        <div class="form-head">
+          <p>Application: <span>*</span></p> <!-- Label for select input -->
+        </div>
+        <div class="form-input">
+          <select>
+            <option value="Select">Select</option>
+            <option value="sfdc">SFDC</option>
+            <option value="Aadhar Vault">Aadhar Vault</option>
+            <option value="CRM Next">CRM Next</option>
+          </select>
+        </div>
+      </div>
+      <!-- ./Third Field -->
 
-        <div class="field">
+      <!-- Fourth Field -->
+      <div class="field">
+        <div class="form-head">
+          <p>Module Name: <span>*</span></p> <!-- Label for select input -->
+        </div>
+        <div class="form-input">
+          <select>
+            <option value="Select">Select</option>
+            <option value="sfdc">SFDC</option>
+            <option value="Aadhar Vault">Aadhar Vault</option>
+            <option value="CRM Next">CRM Next</option>
+          </select>
+        </div>
+      </div>
+      <!-- ./Fourth Field -->
+
+      <!-- Fifth Field -->
+      <div class="field">
+        <div class="form-head">
+          <p>Business Justification: <span>*</span></p> <!-- Label for text input -->
+        </div>
+        <div class="form-input">
+          <input type="text" placeholder="Enter Business Justification Here..." />
+        </div>
+      </div>
+      <!-- ./Fifth Field -->
+    </div>
+  </div>
+  <!-- ./Module bx-1 -->
+
+  <!-- Module bx-2: Additional Data Required For Aadhar Vault -->
+  <div class="bx-2">
+    <div class="head">
+      <p>Additional Data Required For Aadhar Vault</p> <!-- Header for bx-2 -->
+    </div>
+
+    <div class="form-grp-bx">
+      <div class="form-bx-1">
+        <!-- Form Field 1 -->
+        <div class="form-field">
           <div class="form-head">
-            <p>Application: <span>*</span></p>
+            <p>Name: <span>*</span></p> <!-- Label for text input -->
           </div>
+          <div class="form-input">
+            <input type="text" placeholder="Existing creation value" disabled />
+          </div>
+        </div>
+        <!-- ./Form Field 1 -->
 
+        <!-- Form Field 2 -->
+        <div class="form-field">
+          <div class="form-head">
+            <p>Email Id: <span>*</span></p> <!-- Label for text input -->
+          </div>
+          <div class="form-input">
+            <input type="text" placeholder="Existing creation value" disabled />
+          </div>
+        </div>
+        <!-- ./Form Field 2 -->
+
+        <!-- Form Field 3 -->
+        <div class="form-field">
+          <div class="form-head">
+            <p>Approval level 1: <span>*</span></p> <!-- Label for select input -->
+          </div>
           <div class="form-input">
             <select>
               <option value="Select">Select</option>
-
-              <option value="sfdc">SFDC</option>
-
-              <option value="Aadhar Vault">Aadhar Vault</option>
-
-              <option value="CRM Next">CRM Next</option>
+              <option value="Amit Goel">Amit Goel</option>
             </select>
           </div>
         </div>
-        <!-- ./Third Field -->
-        <!-- Fourth Field -->
+        <!-- ./Form Field 3 -->
 
-        <div class="field">
+        <!-- Form Field 4 -->
+        <div class="form-field">
           <div class="form-head">
-            <p>Module Name: <span>*</span></p>
+            <p>Approval Level 2: <span>*</span></p> <!-- Label for select input -->
           </div>
-
           <div class="form-input">
             <select>
               <option value="Select">Select</option>
-
-              <option value="sfdc">SFDC</option>
-
-              <option value="Aadhar Vault">Aadhar Vault</option>
-
-              <option value="CRM Next">CRM Next</option>
+              <option value="Amit Goel">Amit Goel</option>
+              <option value="Niki Kushe">Niki Kushe</option>
             </select>
           </div>
         </div>
-        <!-- ./Fourth Field -->
-        <!-- Fifth Field -->
+        <!-- ./Form Field 4 -->
+      </div>
 
-        <div class="field">
+      <div class="form-bx-2">
+        <!-- Form Field 5 -->
+        <div class="form-field">
           <div class="form-head">
-            <p>Business Justification: <span>*</span></p>
+            <p>User Role: <span>*</span></p> <!-- Label for select input -->
           </div>
-
           <div class="form-input">
-            <input
-              type="text"
-              placeholder="Enter Business Justification Here..."
-            />
+            <select>
+              <option value="Select">Select</option>
+              <option value="User Checker">User Checker</option>
+              <option value="User Maker">User Maker</option>
+              <option value="ITAM">ITAM</option>
+            </select>
           </div>
         </div>
-        <!-- ./Fifth Field -->
-      </div>
-    </div>
+        <!-- ./Form Field 5 -->
 
-    <div class="bx-2">
-      <div class="head">
-        <p>Additional Data Required For Aadhar Vault</p>
-      </div>
-
-      <div class="form-grp-bx">
-        <div class="form-bx-1">
+        <!-- Form Field 6 -->
+        <div class="form-bx-5">
           <div class="form-field">
             <div class="form-head">
-              <p>Name: <span>*</span></p>
+              <p>Access Module: <span>*</span></p> <!-- Label for select input -->
             </div>
-
-            <div class="form-input">
-              <input type="text" placeholder="Existing creation value" disabled/>
-            </div>
-          </div>
-
-          <div class="form-field">
-            <div class="form-head">
-              <p>Email Id: <span>*</span></p>
-            </div>
-
-            <div class="form-input">
-              <input type="text" placeholder="Existing creation value" disabled/>
-            </div>
-          </div>
-
-
-
-         
-          <div class="form-field">
-            <div class="form-head">
-              <p>Approval level 1: <span>*</span></p>
-            </div>
-
             <div class="form-input">
               <select>
                 <option value="Select">Select</option>
-
-                <option value="Amit Goel">Amit Goel</option>
-
-                <!-- <option value="Niki Kaushe">Niki Kaushe</option> -->
-
-                <!-- <option value="3">3</option> -->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
               </select>
             </div>
-          
+          </div>
         </div>
-      
+        <!-- ./Form Field 6 -->
 
-            <div class="form-field">
-              <div class="form-head">
-                <p>Approval Level 2: <span>*</span></p>
-              </div>
-
-              <div class="form-input">
-                <select>
-                  <option value="Select">Select</option>
-
-                  <option value="Amit Goel">Amit Goel</option>
-
-                  <option value="Niki Kushe">Niki Kushe</option>
-                </select>
-              </div>
-            </div>
-
-
-
-          <!-- <div class="form-field">
-            <div class="form-head">
-              <p>Darpan <span>*</span></p>
-            </div>
-
-            <div class="form-input">
-              <input type="text" placeholder="Yes" disabled />
-            </div>
-          </div> -->
-
-        
-      </div>
-
-        <div class="form-bx-2">
+        <!-- Form Field 7 -->
+        <div class="form-bx-9">
           <div class="form-field">
             <div class="form-head">
-              <p>User Role: <span>*</span></p>
+              <p>Channel & Associated Business Unit: <span>*</span></p> <!-- Label for select input -->
             </div>
-
             <div class="form-input">
               <select>
                 <option value="Select">Select</option>
-
-                <option value="User Checker">User Checker</option>
-
-                <option value="User Maker">User Maker</option>
-
-                <option value="ITAM">ITAM</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
               </select>
             </div>
           </div>
+        </div>
+        <!-- ./Form Field 7 -->
 
-          <div class="form-bx-5">
-            <div class="form-field">
-              <div class="form-head">
-                <p>Access Module: <span>*</span></p>
-              </div>
-
-              <div class="form-input">
-                <select>
-                  <option value="Select">Select</option>
-
-                  <option value="1">1</option>
-
-                  <option value="2">2</option>
-
-                  <option value="3">3</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-bx-9">
-              <div class="form-field">
-                <div class="form-head">
-                  <p>Channel & Associated Business Unit: <span>*</span></p>
-                </div>
-  
-                <div class="form-input">
-                  <select>
-                    <option value="Select">Select</option>
-  
-                    <option value="1">1</option>
-  
-                    <option value="2">2</option>
-  
-                    <option value="3">3</option>
-                  </select>
-                </div>
-              </div>
-            </div> 
-              <!-- <div class="form-field">
-                <div class="form-head form-head-check">
-                  <input type="checkbox" />
-
-                  <p>is Mobile User: <span>*</span></p>
-                </div>
-
-                <div class="form-input">
-                  <input type="text" placeholder="XXXXXXX" />
-                </div>
-              </div> -->
-           
+        <!-- Form Field 8 (Commented Out) -->
+        <!--
+        <div class="form-field">
+          <div class="form-head form-head-check">
+            <input type="checkbox" />
+            <p>is Mobile User: <span>*</span></p>
+          </div>
+          <div class="form-input">
+            <input type="text" placeholder="XXXXXXX" />
           </div>
         </div>
+        -->
+        <!-- ./Form Field 8 (Commented Out) -->
       </div>
     </div>
-    <div class="btn-grp-bx">
-      <div class="btn btn-1">
-        <button>Reset</button>
-      </div>
+  </div>
+  <!-- ./Module bx-2 -->
 
-      <div class="btn btn-2">
-        <button>Submit</button>
-      </div>
+  <!-- Button Group -->
+  <div class="btn-grp-bx">
+    <div class="btn btn-1">
+      <button>Reset</button> <!-- Reset button -->
     </div>
-  </body>
+    <div class="btn btn-2">
+      <button>Submit</button> <!-- Submit button -->
+    </div>
+  </div>
+  <!-- ./Button Group -->
+</body>
 </html>

@@ -1,6 +1,7 @@
-/* @import url("
-https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap
-"); */
+/* Import Google Fonts */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+
+/* Universal Styles */
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@ https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,4
   font-family: "Poppins", sans-serif;
 }
 
+/* Box Styles */
 .bx-1,
 .bx-2 {
   max-width: 1440px;
@@ -16,7 +18,11 @@ https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,4
   box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
-.bx-1 .head {
+/* Header Styles */
+.bx-1 .head,
+.bx-2 .head,
+.bx-5 .head,
+.bx-9 .head {
   border-radius: 10px 10px 0 0;
   padding: 8px 12px;
   color: white;
@@ -25,35 +31,26 @@ https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,4
   background: rgb(1, 1, 81);
 }
 
+/* Form Box Styles */
 .bx-1 .form-bx {
   padding: 8px 12px;
   border-radius: 0 0 10px 10px;
 }
 
-.form-bx .field {
+/* Field Styles */
+.field,
+.form-field {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.field {
   margin-bottom: 20px;
 }
 
-.form-field {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
+/* Field Header Styles */
+.field .form-head,
 .form-head {
-  margin-right: 10px;
-}
-.form-input {
-  display: flex;
-  gap: 20px; /* Space between radio buttons */
-}
-.field .form-head {
   width: 25%;
+  margin-right: 10px;
 }
 
 .form-head p {
@@ -65,38 +62,21 @@ https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,4
   color: red;
 }
 
-.field .form-input {
-  width: 75%;
-}
-
+/* Field Input Styles */
+.field .form-input,
 .form-input {
+  width: 75%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-
-
-
-.form-field {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-.form-head {
-  margin-right: 10px;
-}
-.form-input {
-  display: flex;
   gap: 20px; /* Space between radio buttons */
 }
+
 .form-input label {
   display: flex;
   align-items: center;
   gap: 5px; /* Space between radio button and label text */
 }
-
-
-
 
 .form-input input {
   font-size: 16px;
@@ -107,6 +87,7 @@ https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,4
   border: 1px solid #a1a0a0;
 }
 
+/* Radio Button Group Styles */
 .form-input .rd-bx {
   width: 30%;
   display: flex;
@@ -115,28 +96,12 @@ https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,4
   gap: 30px;
 }
 
-.form-input .rd-bx .rd-1 {
+.form-input .rd-bx .rd-1,
+.form-input .rd-bx .rd-2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-}
-
-
-.form-input .rd-bx {
-  width: 30%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-}
-
-.form-input .rd-bx .rd-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* gap: 16px; */
-  width: 100%;
 }
 
 .form-input .rd-bx .rd-2 input {
@@ -155,6 +120,7 @@ https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,4
   width: 100%;
 }
 
+/* Form Group Box Styles */
 .form-grp-bx {
   padding: 8px 12px 10px;
   display: flex;
@@ -167,49 +133,7 @@ https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,4
   width: 50%;
 }
 
-.bx-2 .head {
-  border-radius: 10px 10px 0 0;
-  padding: 8px 12px;
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  background: rgb(1, 1, 81);
-}
-
-.bx-5 .head {
-  border-radius: 10px 10px 0 0;
-  padding: 8px 12px;
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  background: rgb(1, 1, 81);
-}
-
-.bx-9 .head {
-  border-radius: 10px 10px 0 0;
-  padding: 8px 12px;
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  background: rgb(1, 1, 81);
-}
-
-.form-field {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 16px 0;
-}
-
-.form-head {
-  width: 30%;
-}
-
-.form-input {
-  width: 70%;
-}
-
+/* Select Input Styles */
 .form-input select {
   width: 100%;
   padding: 8px 10px;
@@ -218,15 +142,13 @@ https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,4
   border-radius: 8px;
 }
 
-.form-head span {
-  color: red;
-}
-
+/* Checkbox Styles */
 .form-head-check {
   display: flex;
   gap: 10px;
 }
 
+/* Button Group Styles */
 .btn-grp-bx {
   width: 100%;
   margin: 20px 0;
@@ -241,6 +163,6 @@ https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,4
   color: white;
   border-radius: 6px;
   border: none;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 20px;
 }
