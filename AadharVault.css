@@ -40,6 +40,18 @@ https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,4
   margin-bottom: 20px;
 }
 
+.form-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.form-head {
+  margin-right: 10px;
+}
+.form-input {
+  display: flex;
+  gap: 20px; /* Space between radio buttons */
+}
 .field .form-head {
   width: 25%;
 }
@@ -59,9 +71,32 @@ https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,4
 
 .form-input {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
+
+
+
+.form-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.form-head {
+  margin-right: 10px;
+}
+.form-input {
+  display: flex;
+  gap: 20px; /* Space between radio buttons */
+}
+.form-input label {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between radio button and label text */
+}
+
+
+
 
 .form-input input {
   font-size: 16px;
@@ -87,9 +122,17 @@ https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,4
   gap: 10px;
 }
 
-.form-input .rd-bx .rd-2 {
+.form-input .rd-bx {
+  width: 30%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.form-input .rd-bx .rd-2 {
+  display: flex;
+  justify-content: center;
   align-items: center;
   /* gap: 16px; */
   width: 100%;

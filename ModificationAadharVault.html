@@ -48,16 +48,14 @@
           <div class="form-input">
             <div class="rd-bx">
               <div class="rd-1">
-                <input type="radio" checked />
+                <input type="radio" id="myself" name="requestFor" checked />
+                <label for="myself">Myself</label>
+            </div>
 
-                <label>Myself</label>
-              </div>
-
-              <div class="rd-2">
-                <input type="radio" />
-
-                <span>On behalf of</span>
-              </div>
+            <div class="rd-2">
+                <input type="radio" id="onBehalf" name="requestFor" />
+                <label for="onBehalf">On behalf of</label>
+            </div>
             </div>
 
             <div class="emp-bx">
@@ -69,6 +67,7 @@
             </div>
           </div>
         </div>
+
         <!-- ./Second Field -->
         <!-- Third Field -->
 
@@ -157,25 +156,42 @@
 
 
 
-          <div class="form-bx-9">
+         
+          <div class="form-field">
+            <div class="form-head">
+              <p>Approval level 1: <span>*</span></p>
+            </div>
+
+            <div class="form-input">
+              <select>
+                <option value="Select">Select</option>
+
+                <option value="Amit Goel">Amit Goel</option>
+
+                <!-- <option value="Niki Kaushe">Niki Kaushe</option> -->
+
+                <!-- <option value="3">3</option> -->
+              </select>
+            </div>
+          
+        </div>
+      
+
             <div class="form-field">
               <div class="form-head">
-                <p>Channel & Associated Business Unit: <span>*</span></p>
+                <p>Approval Level 2: <span>*</span></p>
               </div>
 
               <div class="form-input">
                 <select>
                   <option value="Select">Select</option>
 
-                  <option value="1">1</option>
+                  <option value="Amit Goel">Amit Goel</option>
 
-                  <option value="2">2</option>
-
-                  <option value="3">3</option>
+                  <option value="Niki Kushe">Niki Kushe</option>
                 </select>
               </div>
             </div>
-          </div> 
 
 
 
@@ -189,21 +205,7 @@
             </div>
           </div> -->
 
-          <!-- <div class="form-field">
-            <div class="form-head">
-              <p>Approval level 2: <span>*</span></p>
-            </div>
-
-            <div class="form-input">
-              <select>
-                <option value="Select">Select</option>
-
-                <option value="Amit Goel">Amit Goel</option>
-
-                
-              </select>
-            </div>
-        </div> -->
+        
       </div>
 
         <div class="form-bx-2">
@@ -244,42 +246,25 @@
               </div>
             </div>
 
-            <div class="form-field">
-              <div class="form-head">
-                <p>Approval level 1: <span>*</span></p>
-              </div>
-  
-              <div class="form-input">
-                <select>
-                  <option value="Select">Select</option>
-  
-                  <option value="Amit Goel">Amit Goel</option>
-  
-                  <!-- <option value="Niki Kaushe">Niki Kaushe</option> -->
-  
-                  <!-- <option value="3">3</option> -->
-                </select>
-              </div>
-            
-          </div>
-        </div>
-
+            <div class="form-bx-9">
               <div class="form-field">
                 <div class="form-head">
-                  <p>Approval Level 2: <span>*</span></p>
+                  <p>Channel & Associated Business Unit: <span>*</span></p>
                 </div>
-
+  
                 <div class="form-input">
                   <select>
                     <option value="Select">Select</option>
-
-                    <option value="Amit Goel">Amit Goel</option>
-
-                    <option value="Niki Kushe">Niki Kushe</option>
+  
+                    <option value="1">1</option>
+  
+                    <option value="2">2</option>
+  
+                    <option value="3">3</option>
                   </select>
                 </div>
               </div>
-
+            </div> 
               <!-- <div class="form-field">
                 <div class="form-head form-head-check">
                   <input type="checkbox" />

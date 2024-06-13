@@ -5,39 +5,43 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="AadharVault.css" />
-
-    <title>Aadhar Vault</title>
-  </head>
-
-  <body>
+<link rel="stylesheet" href="AadharVault.css" />
+    <script>
+        function redirectToModification() {
+            var selectBox = document.getElementById("requestType");
+            var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+            if (selectedValue === "modification") {
+                window.open("ModificationAadharVault.html", "_blank");
+                selectBox.selectedIndex = 0; // Reset dropdown to "Select" after opening new tab
+            }
+        }
+    </script>
+</head>
+<body>
     <div class="bx-1">
-      <div class="head">
-        <p>Default Data</p>
-      </div>
+        <div class="head">
+            <p>Default Data</p>
+        </div>
 
-      <div class="form-bx">
-        <!-- First Field -->
-
-        <div class="field">
-          <div class="form-head">
-            <p>Types of User Request: <span>*</span></p>
-          </div>
-          <div class="form-input">
-            <select>
-              <option value="Select">Select</option>
-
-              <option value="creation">Creation</option>
-
-              <option value="modification">Modification</option>
-
-              <option value="deletion">Deletion</option>
-            </select>
+        <div class="form-bx">
+            <!-- First Field -->
+            <div class="field">
+                <div class="form-head">
+                    <p>Types of User Request: <span>*</span></p>
+                </div>
+                <div class="form-input">
+                    <select id="requestType" onchange="redirectToModification()">
+                        <option value="Select">Select</option>
+                        <option value="creation">Creation</option>
+                        <option value="modification">Modification</option>
+                        <!-- <option value="deletion">Deletion</option> -->
+                    </select>
           </div>
         </div>
         <!-- ./First Field -->
-        <!-- Second Field -->
+
+
+        <!-- Second Field  Request For-->
 
         <div class="field">
           <div class="form-head">
@@ -47,16 +51,14 @@
           <div class="form-input">
             <div class="rd-bx">
               <div class="rd-1">
-                <input type="radio" checked />
+                <input type="radio" id="myself" name="requestFor" checked />
+                <label for="myself">Myself</label>
+            </div>
 
-                <label>Myself</label>
-              </div>
-
-              <div class="rd-2">
-                <input type="radio" />
-
-                <span>On behalf of</span>
-              </div>
+            <div class="rd-2">
+                <input type="radio" id="onBehalf" name="requestFor" />
+                <label for="onBehalf">On behalf of</label>
+            </div>
             </div>
 
             <div class="emp-bx">
@@ -69,6 +71,8 @@
           </div>
         </div>
         <!-- ./Second Field -->
+
+        
         <!-- Third Field -->
 
         <div class="field">
@@ -176,6 +180,24 @@
               <input type="text" placeholder="XXXXXXX" />
             </div>
           </div>
+
+          <div class="form-field">
+            <div class="form-head">
+              <p>Approval Level 1: <span>*</span></p>
+            </div>
+
+            <div class="form-input">
+              <select>
+                <option value="Select">Select</option>
+
+                <option value="Amit Goel">Amit Goel</option>
+
+                <option value="Niki Kushe">Niki Kushe</option>
+              </select>
+            </div>
+          </div>
+
+
         </div>
 
         <div class="form-bx-2">
@@ -235,21 +257,39 @@
                 </div>
               </div>
 
+              <!-- <div class="form-field">
+                <div class="form-head">
+                  <p>Status: <span>*</span></p>
+                </div>
+                <label>
+                  <input type="radio" name="option" 
+                         value="option1"> Enable
+              </label>
+              <label>
+                <input type="radio" name="option" 
+                       value="option2"> Disable
+            </label>
+              </div> -->
+
+
               <div class="form-field">
                 <div class="form-head">
-                  <p>Approval Level 1: <span>*</span></p>
+                  <p>Status: <span>*</span></p>
                 </div>
-
+    
                 <div class="form-input">
-                  <select>
-                    <option value="Select">Select</option>
-
-                    <option value="Amit Goel">Amit Goel</option>
-
-                    <option value="Niki Kushe">Niki Kushe</option>
-                  </select>
+                  <div class="rd-1">
+                    <input type="radio" id="myself" name="requestFor" checked />
+                    <label for="myself">Myself</label>
+                </div>
+    
+                <div class="rd-2">
+                    <input type="radio" id="onBehalf" name="requestFor" />
+                    <label for="onBehalf">On behalf of</label>
+                </div>
                 </div>
               </div>
+
 
               <div class="form-field">
                 <div class="form-head">
@@ -262,12 +302,24 @@
     
                     <option value="Amit Goel">Amit Goel</option>
     
-                    <!-- <option value="Niki Kaushe">Niki Kaushe</option> -->
-    
-                    <!-- <option value="3">3</option> -->
                   </select>
                 </div>
               </div>
+
+              <!-- <div class="form-field">
+                <div class="form-head">
+                  <p>Approval Level 2: <span>*</span></p>
+                </div>
+    
+                <div class="form-input">
+                  <select>
+                    <option value="Select">Select</option>
+    
+                    <option value="Amit Goel">Amit Goel</option>
+
+                  </select>
+                </div>
+              </div> -->
 
               <!-- <div class="form-field">
                 <div class="form-head form-head-check">
