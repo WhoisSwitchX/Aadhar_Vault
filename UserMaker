@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="AadharVault.css" />
+    <title>AadharVault - User Maker</title>
+    
+    <script>
+
+function redirectToAdmin() {
+            var selectBox = document.getElementById("requestType");
+            var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+            if (selectedValue === "Admin") {
+                window.open("Admin.html", "_blank");
+                selectBox.selectedIndex = 0; // Reset dropdown to "Select" after opening new tab
+            }
+        }
+
+        // Function to redirect to Modification page when "Modification" is selected
+        function redirectToModification() {
+            var selectBox = document.getElementById("requestType");
+            var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+            if (selectedValue === "modification") {
+                window.open("ModificationAadharVault.html", "_blank");
+                selectBox.selectedIndex = 0; // Reset dropdown to "Select" after opening new tab
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="bx-1">
+        <div class="head">
+            <p>Default Data</p>
+        </div>
+
+        <div class="form-bx">
+            <!-- First Field: Types of User Request -->
+            <div class="field">
+                <div class="form-head">
+                    <p>Types of User Request: <span>*</span></p>
+                </div>
+                <div class="form-input">
+                    <select id="requestType" onchange="redirectToModification()">
+                        <option value="Select">Select</option>
+                        <option value="creation">Creation</option>
+                        <option value="modification">Modification</option>
+                        <!-- <option value="deletion">Deletion</option> -->
+                    </select>
+                </div>
+            </div>
+            <!-- ./First Field -->
+
+            <!-- Second Field: Request For -->
+            <div class="field">
+                <div class="form-head">
+                    <p>Request For: <span>*</span></p>
+                </div>
+                <div class="form-input">
+                    <div class="rd-bx">
+                        <div class="rd-1">
+                            <input type="radio" id="myself" name="requestFor" checked />
+                            <label for="myself">Myself</label>
+                        </div>
+                        <div class="rd-2">
+                            <input type="radio" id="onBehalf" name="requestFor" />
+                            <label for="onBehalf">On behalf of</label>
+                        </div>
+                    </div>
+                    <div class="emp-bx">
+                        <input type="text" placeholder="Enter Employee Details..." disabled />
+                    </div>
+                </div>
+            </div>
+            <!-- ./Second Field -->
+
+            <!-- Third Field: Application -->
+            <div class="field">
+                <div class="form-head">
+                    <p>Application: <span>*</span></p>
+                </div>
+                <div class="form-input">
+                    <select>
+                        <option value="Select">Select</option>
+                        <option value="sfdc">SFDC</option>
+                        <option value="Aadhar Vault">Aadhar Vault</option>
+                        <option value="CRM Next">CRM Next</option>
+                    </select>
+                </div>
+            </div>
+            <!-- ./Third Field -->
+
+            <!-- Fourth Field: Module Name -->
+            <div class="field">
+                <div class="form-head">
+                    <p>Module Name: <span>*</span></p>
+                </div>
+                <div class="form-input">
+                    <select>
+                        <option value="Select">Select</option>
+                        <option value="sfdc">SFDC</option>
+                        <option value="Aadhar Vault">Aadhar Vault</option>
+                        <option value="CRM Next">CRM Next</option>
+                    </select>
+                </div>
+            </div>
+            <!-- ./Fourth Field -->
+
+            <!-- Fifth Field: Business Justification -->
+            <div class="field">
+                <div class="form-head">
+                    <p>Business Justification: <span>*</span></p>
+                </div>
+                <div class="form-input">
+                    <input type="text" placeholder="Enter Business Justification Here..." />
+                </div>
+            </div>
+            <!-- ./Fifth Field -->
+        </div>
+    </div>
+
+    <div class="bx-2">
+        <div class="head">
+            <p>Additional Data Required For Aadhar Vault</p>
+        </div>
+
+        <div class="form-grp-bx">
+            <div class="form-bx-1">
+                <!-- Additional Field: Name -->
+                <div class="form-field">
+                    <div class="form-head">
+                        <p>User Role: <span>*</span></p>
+                    </div>
+                    <div class="form-input">
+                        <select>
+                            <!-- <option value="Select">Select</option> -->
+                            <option value="User Checker">User Maker</option>
+                            <option value="User Maker">User Checker</option>
+                            <option value="Admin">Admin</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Additional Field: Email Id -->
+                <div class="form-bx-5">
+                    <div class="form-field">
+                        <div class="form-head">
+                            <p>Access Module: <span>*</span></p>
+                        </div>
+                        <div class="form-input">
+                            <select>
+                                <option value="Select">Select</option>
+                                <option value="1">User--Operation--User--Operation--User Demo Auth</option>
+                                <option value="2">User--Operation--Bio Auth</option>
+                                <option value="3">User--Operation--Demo Auth</option>
+                                <option value="4">User--Operation--Seeding Request(Maker)</option>
+                                <option value="5">User--Operation--Generate URN(Maker)</option>
+                                <option value="6">User--Operation--Deseeding Request</option>
+                                <option value="7">User--Operation--ABPS</option>
+                                <option value="8">User--Operation--E-Kyc</option>
+                                <option value="9">User--Operation--Bulk URN(Maker)</option>
+                                <option value="10">User--Operation--Bulk Seeding</option>
+                                <option value="11">User--Operation--URN</option>
+                                <option value="12">User--Operation--Enquire Demo Auth URN</option>
+                                <option value="13">User--Qauick Links--Generate URN (Maker)</option>
+                                <option value="14">User--Qauick Links--Seeding Request(Maker)</option>
+                                <option value="15">User--Qauick Links--Aadhaar DeSeeding Request</option>
+                                <option value="16">User--Qauick Links--Aadhaar Demo-Authentication</option>
+                                <option value="17">User--Qauick Links--Aadhaar Payment Bridge System </option>
+                                <option value="18">User--Qauick Links--Aadhaar URN Report</option>
+                                <option value="20">User--Qauick Links--Generate Ref Key</option>
+                                <option value="21">User--Qauick Links--Enquiry Demo Auth URN</option>
+                                <option value="22">User--Qauick Links--User Demo Auth</option>
+                                <option value="23">User--Reports--Enquire UID</option>
+                                <option value="24">User--Reports--Seed/Deseed Status</option>
+                                <option value="25">User--Reports--APBS TimeOut</option>
+                                <option value="26">User--Reports--Genarate Ref Key</option>
+                                <option value="27">User--Reports--Demo Report</option>
+                                <option value="28">User--Reports--URN Report</option>
+                                <option value="29">User--Reports--APBS Report</option>
+                                <option value="30">User--Reports--Enquirey Urn Report</option>
+                                <option value="31">User--Reports--Download Seed/Deseed</option>
+                                <option value="32">User--Reports--Update Seed/Deseed</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Field: Darpan -->
+                <!-- <div class="form-field">
+                    <div class="form-head">
+                        <p>Darpan <span>*</span></p>
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Yes" disabled />
+                    </div>
+                </div> -->
+
+                <!-- Additional Field: Is Mobile User -->
+                <!-- <div class="form-field">
+                    <div class="form-head form-head-check">
+                        <input type="checkbox" />
+                        <p>is Mobile User: <span>*</span></p>
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="XXXXXXX" />
+                    </div>
+                </div> -->
+
+                <!-- Additional Field: Approval Level 1 -->
+                <!-- <div class="form-field">
+                    <div class="form-head">
+                        <p>Channel & Associated Business Unit: <span>*</span></p>
+                    </div>
+                    <div class="form-input">
+                        <select>
+                            <option value="Select">Select</option>
+                            <option value="1">BranchBanking--BBB</option>
+                            <option value="2">Finacle--Finacle Account Opening</option>
+                            <option value="3">Finacle--ABACUS Account Opening</option>
+                            <option value="4">Finacle--MF and insurance</option>
+                            <option value="5">Finacle--CAMS</option>
+                            <option value="6">Finacle--Finacle core application</option>
+                            <option value="7">Ganaseva--Ganaseva Account opening</option>
+                            <option value="8">Ganaseva--BCMS</option>
+                            <option value="9">Ganaseva--BCMS01</option>
+                            <option value="10">Ganaseva--Ganaseva Application</option>
+                            <option value="11">Credit Card--CC business Unit</option>
+                            <option value="12">Test--Test Business / unit</option>
+                            <option value="13">Retail Loan--INDUS LOS</option>
+                            <option value="14">Retail Loan--Asset ops</option>
+                            <option value="15">Retail Loan--Crops</option>
+                            <option value="16">Retail Loan--Disbursement</option>
+                            <option value="17">Retail Loan--Exception</option>
+                            <option value="18">Retail Loan--Insurance</option>
+                            <option value="19">Retail Loan--Recon</option>
+                            <option value="20">Retail Loan--Retail Loan--Repayment</option>
+                            <option value="21">Retail Loan--RMU</option>
+                            <option value="22">Retail Loan--Servicing</option>
+                            <option value="23">Retail Loan--WCF</option>
+                            <option value="24">Retail Loan--WL</option>
+                            <option value="25">Retail Loan--CPU</option>
+                            <option value="26">AGRI Loan--E Commodity</option>
+                            <option value="27">AGRI Loan--AGRI Loan</option>
+                            <option value="28">Posidex UCIC--UCIC generation</option>
+                            <option value="29">DMR--DMR</option>
+                            <option value="30">DataPower--DataPower</option>
+                            <option value="31">RBLFINSERVE--ARTOO CIF Creation</option>
+                        </select>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="form-bx-2">
+                <!-- Additional Field: User Role -->
+                <!-- <div class="form-field">
+                    <div class="form-head">
+                        <p>User Role: <span>*</span></p>
+                    </div>
+                    <div class="form-input">
+                        <select>
+                            <option value="Select">Select</option>
+                            <option value="User Checker">User Checker</option>
+                            <option value="User Maker">User Maker</option>
+                            <option value="ITAM">ITAM</option>
+                        </select>
+                    </div>
+                </div> -->
+
+                <!-- Additional Field: Access Module -->
+                <!-- <div class="form-bx-5">
+                    <div class="form-field">
+                        <div class="form-head">
+                            <p>Access Module: <span>*</span></p>
+                        </div>
+                        <div class="form-input">
+                            <select>
+                                <option value="Select">Select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Additional Field: Channel & Associated Business Unit -->
+                <div class="form-bx-9">
+                    <div class="form-field">
+
+                        <div class="form-head">
+                            <p>Approval Level 1: <span>*</span></p>
+                        </div>
+                        <div class="form-input">
+                            <select>
+                                <option value="Select">Select</option>
+                                <option value="Amit Goel">Amit Goel</option>
+                                <option value="Niki Kushe">Niki Kushe</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Additional Field: Status -->
+                    <!-- <div class="form-field">
+                        <div class="form-head">
+                            <p>Status: <span>*</span></p>
+                        </div>
+                        <div class="form-input">
+                            <label>
+                                <input type="radio" name="option" value="enable"> Enable
+                            </label>
+                            <label>
+                                <input type="radio" name="option" value="disable"> Disable
+                            </label>
+                        </div>
+                    </div> -->
+
+                    <!-- Additional Field: Approval Level 2 -->
+                    <div class="form-field">
+                        <div class="form-head">
+                          <p>Approval Level 2: <span>*</span></p> <!-- Label for select input -->
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="N/A" disabled />
+                          </div>
+                      </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buttons for Reset and Submit -->
+    <div class="btn-grp-bx">
+        <div class="btn btn-1">
+            <button>Reset</button>
+        </div>
+        <div class="btn btn-2">
+            <button>Submit</button>
+        </div>
+    </div>
+</body>
+</html>
