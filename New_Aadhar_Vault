@@ -9,14 +9,7 @@
     
     <script>
 
-function redirectToAdmin() {
-            var selectBox = document.getElementById("requestType");
-            var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-            if (selectedValue === "Admin") {
-                window.open("Admin.html", "_blank");
-                selectBox.selectedIndex = 0; // Reset dropdown to "Select" after opening new tab
-            }
-        }
+
 
         // Function to redirect to Modification page when "Modification" is selected
         function redirectToModification() {
